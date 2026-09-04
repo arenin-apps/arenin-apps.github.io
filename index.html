@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ARenIN Apps — Argentinos en Inglaterra</title>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8667684098323123" crossorigin="anonymous"></script>
+<title>ARenIN & VenIN Apps — Comunidades latinoamericanas en el Reino Unido</title>
+<meta name="description" content="Repositorio de aplicaciones comunitarias para argentinos y venezolanos en el Reino Unido: agendas culturales, comparadores de precios y directorios de restaurantes, mantenidos por ARenIN y VenIN.">
 <style>
   * { box-sizing: border-box; }
   body {
@@ -13,15 +13,17 @@
     color: #f1f5f9;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
+    padding: 48px 24px;
+    line-height: 1.6;
   }
-  main { max-width: 640px; text-align: center; }
-  h1 { font-size: 22px; margin: 0 0 8px; }
-  p.sub { color: #94a3b8; font-size: 14px; margin: 0 0 32px; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; text-align: left; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  p.intro { color: #cbd5e1; font-size: 15px; margin: 0 0 36px; max-width: 60ch; }
+  h2.section-title {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+    color: #64748b; margin: 36px 0 14px;
+  }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
   a.card {
     text-decoration: none;
     background: #0f172a;
@@ -33,14 +35,25 @@
   }
   a.card strong { display: block; font-size: 14px; margin-bottom: 4px; }
   a.card span { font-size: 12px; color: #94a3b8; }
-  footer { margin-top: 32px; font-size: 12px; color: #475569; }
+  p.about { color: #94a3b8; font-size: 13.5px; margin-top: 40px; }
+  footer { margin-top: 40px; font-size: 12px; color: #475569; border-top: 1px solid #1e293b; padding-top: 20px; }
   footer a { color: #64748b; }
 </style>
 </head>
 <body>
 <main>
-  <h1>ARenIN Apps</h1>
-  <p class="sub">Repositorio de las apps satélite de ARenIN — Argentinos en Inglaterra.</p>
+  <h1>ARenIN &amp; VenIN Apps</h1>
+  <p class="intro">
+    Este repositorio aloja las aplicaciones web de código abierto que mantienen
+    <strong>ARenIN</strong> (Argentinos en Inglaterra) y <strong>VenIN</strong>
+    (Venezolanos en Inglaterra), dos proyectos comunitarios independientes que
+    ayudan a sus respectivas comunidades en el Reino Unido a encontrar eventos
+    culturales, comparar precios de productos regionales y descubrir
+    restaurantes y comercios afines, todo actualizado automáticamente todos los
+    días a partir de decenas de fuentes públicas del Reino Unido.
+  </p>
+
+  <h2 class="section-title">ARenIN — arenin.uk</h2>
   <div class="cards">
     <a class="card" href="https://arenin.uk/agenda" target="_blank" rel="noopener">
       <strong>Agenda Cultural</strong>
@@ -55,8 +68,24 @@
       <span>Parrillas, empanadas y sabores de casa en todo el Reino Unido.</span>
     </a>
   </div>
+
+  <h2 class="section-title">VenIN — venenin.uk</h2>
+  <div class="cards">
+    <a class="card" href="https://venenin.uk/agenda" target="_blank" rel="noopener">
+      <strong>Agenda Cultural</strong>
+      <span>Eventos, música, cine y deportes venezolanos en el Reino Unido.</span>
+    </a>
+  </div>
+
+  <p class="about">
+    Todas estas aplicaciones son de código abierto, se actualizan automáticamente
+    mediante rastreadores diarios y aceptan sugerencias de la comunidad para
+    agregar nuevos eventos, restaurantes o fuentes de información.
+  </p>
+
   <footer>
     Un proyecto de <a href="https://arenin.uk" target="_blank" rel="noopener">arenin.uk</a>
+    y <a href="https://venenin.uk" target="_blank" rel="noopener">venenin.uk</a>.
   </footer>
 </main>
 </body>
